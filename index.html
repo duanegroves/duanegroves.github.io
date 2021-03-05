@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Personal Website v1</title>
+    <meta name="description" content="Version 1: Duane Samsuri Groves' personal website protfolio">
+    <meta name="author" content="Duane S. Groves">
+
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+
+    <!--===== SWIPER BUNDLE =====-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--===== ICONIFY =====-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Duane Groves</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="iconify" data-icon="bx:bx-menu" data-inline="false"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class="iconify" data-icon="bx:bx-up-arrow-alt" data-inline="false"></i>Scroll down</a>
+                </div>
+
+                <img src="assets/img/Graduation Hero.png" alt="" class="home__img">
+            </div>
+        </section>
+        
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/Profile Picture.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I am Duane Groves</h2>
+                    <span class="about__profession">CS+Philosophy @UIUC</span>
+                    <p class="about__text">I'm currently exploring ethical theories and how I can use my philosophical background in the field of CS. 
+                        I'm fascinated by all-things philosophy and psychology, and love the idea of creating products that can change someone's life for the better.
+                    </p>
+
+                    <div class="about__social">
+                        <input type="button" onclick="window.open('./assets/img/DSG Resume Spring 2021 2.0.pdf')" value="Resume" class="resume__button">
+                        <a onclick="window.open('https://www.linkedin.com/in/duanegroves/')" class="about__social-icon"><i class="iconify" data-icon="fa-brands:linkedin" data-inline="false"></i></a>
+                        <a onclick="window.open('https://github.com/duanegroves')" class="about__social-icon"><i class="iconify" data-icon="fa-brands:github" data-inline="false"></i></a>
+                        <a onclick="window.open('https://www.hackerrank.com/duanegroves')" class="about__social-icon"><i class="iconify" data-icon="fa-brands:hackerrank" data-inline="false"></i></a>
+                        <a onclick="window.open('https://www.leetcode.com/duanegroves')" class="about__social-icon"><i class="iconify" data-icon="simple-icons:leetcode" data-inline="false"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Development</h3>
+                    <span class="skills__name">C++</span>
+                    <span class="skills__name">Html</span>
+                    <span class="skills__name">Css</span>
+                    <span class="skills__name">Javascript</span>
+                    <span class="skills__name">Scss</span>
+                    <span class="skills__name">React</span>
+                    
+                    <h3 class="skills__subtitle">Design</h3>
+                    <span class="skills__name">Figma</span>
+                    <span class="skills__name">Photoshop</span>
+                </div>
+
+                <div class="skills__img">
+                    <img src="assets/img/skill.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                    <img src="assets/img/ARtGallery.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a onclick="window.open('https://gitlab.engr.illinois.edu/cs196/fall-2019-projects/artgallery-unity')" class="portfolio__link-name">ARtGallery</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/Hack Illinois Logo.png" alt="">
+
+                    <div class="portfolio__link">
+                        <a onclick="window.open('https://github.com/HackIllinois/android')" class="portfolio__link-name">HackIllinois</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work3.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">View details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work4.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">View details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work5.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">View details</a>
+                    </div>
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work6.jpg" alt="">
+
+                    <div class="portfolio__link">
+                        <a href="#" class="portfolio__link-name">View details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== BLOG =====-->
+        <section class="blog section" id="blog">
+            <h2 class="section-title">Blog</h2>
+
+            <div class="blog__container bd-grid swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="post__module swiper-slide">
+                        <!-- Thumbnail-->
+                        <div class="post__thumbnail">
+                            <div class="post__date">
+                                <div class="post__day">27</div>
+                                <div class="post__month">Mar</div>
+                            </div>
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg"/>
+                        </div>
+                        <!-- Post Content-->
+                        <div class="post__content">
+                            <div class="post__category">Photos</div>
+                            <h1 class="post__title">City Lights in New York</h1>
+                            <h2 class="post__subtitle">The city that never sleeps.</h2>
+                            <p class="post__description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                        </div>
+                    </div>
+                    <div class="blog__content swiper-slide">
+                        <img src="" alt="" class="blog__img">
+                        <h3 class="blog__title">2</h3>
+                        <span class="blog__client">Client</span>
+                        <p class="blog__description">this is the description</p>
+                    </div>
+                    <div class="blog__content swiper-slide">
+                        <img src="" alt="" class="blog__img">
+                        <h3 class="blog__title">3</h3>
+                        <span class="blog__client">Client</span>
+                        <p class="blog__description">this is the description</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section.blo class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">EMAIL</h3>
+                    <span class="contact__text">dgroves2@illinois.edu</span>
+
+                    <h3 class="contact__subtitle">PHONE</h3>
+                    <span class="contact__text">+1 (608) 312-0036</span>
+
+                    <h3 class="contact__subtitle">ADDRESS</h3>
+                    <span class="contact__text">1321 N Lincoln Ave, #2074<br> Urbana, IL 61801</span>
+                </div>
+
+                <form action="/assets/php/contactForm.php" method="post" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input" required>
+                        <input type="email" placeholder="Email" class="contact__input" required>
+                    </div>
+
+                    <textarea name="message" id="" cols="0" rows="10" class="contact__input" required></textarea>
+
+                    <input type="submit" value="Send" class="contact__button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">Duane Groves</h2>
+                <p class="footer__text">I'm Duane Samsuri Groves and this is my personal website</p>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">EXPLORE</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">About</a></li>
+                    <li><a href="#skills" class="footer__link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                    <li><a href="#blog" class="footer__link">Blog</a></li>
+                    <li><a href="#Contact" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__data">
+                <h2 class="footer__title">FOLLOW</h2>
+                <a onclick="window.open('https://www.facebook.com/duane.groves.73/')" class="footer__social"><i class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></i></a>
+                <a onclick="window.open('https://www.instagram.com/duane_thepebble/')" class="footer__social"><i class="iconify" data-icon="bx:bxl-instagram" data-inline="false"></i></a>
+                <a onClick="MyWindow=window.open('https://www.youtube.com/watch?v=oHg5SJYRHA0','MyWindow','width=600,height=300'); return false;" class="footer__social"><i class="iconify" data-icon="bx:bxl-twitter" data-inline="false"></i></a>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <!--===== SWIPER BUNDLE =====-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== JQuery =====-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <!--===== Custom JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>
