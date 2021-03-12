@@ -244,6 +244,10 @@ img{
     display: block;
     margin-bottom: var(--mb-4);
 }
+.about__text a {
+    color: var(--first-color);
+    text-decoration: underline;
+}
 .resume__button{
     background-color: var(--first-color);
     color: var(--white-color);
@@ -304,20 +308,20 @@ img{
     border-radius: .5rem;
 }
 
-/*===== PORTFOLIO =====*/
-.portfolio__container{
+/*===== projects =====*/
+.projects__container{
     justify-items: center;
     row-gap: 2rem;
 }
-.portfolio__img{
+.projects__img{
     position: relative;
     overflow: hidden;
 }
-.portfolio__img img{
+.projects__img img{
     border-radius: .5rem;
     object-fit: cover;
 }
-.portfolio__link{
+.projects__link{
     position: absolute;
     bottom: -100%;
     width: 100%;
@@ -331,10 +335,10 @@ img{
     backdrop-filter: blur(10px);
     transition: .3s;
 }
-.portfolio__img:hover .portfolio__link{
+.projects__img:hover .projects__link{
     bottom: 0;
 }
-.portfolio__link-name{
+.projects__link-name{
     color: var(--dark-color);
     font-size: var(--medium-font-size);
     font-weight: bold;
@@ -591,7 +595,7 @@ img{
         align-items: center;
     }
 
-    .portfolio__container{
+    .projects__container{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
